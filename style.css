@@ -1,9 +1,14 @@
 body {
     display: grid;
     height: 95vh;
-    grid-template: auto 1fr auto / auto 1fr auto
+    grid-template: auto 1fr auto / auto 1fr auto;
   }
   
+  input[type="number"]
+  {
+      font-size:50px;
+  }
+
   header {
     background: wheat;
     padding: 1rem;
@@ -13,12 +18,13 @@ body {
   .left-sidebar {
     background: rgb(129, 255, 161);
     grid-column: 1 / 2;
+    font-size:large;
   }
   
   main {
     background: rgb(255, 190, 164);
     grid-column: 2 / 3;
-    font-size:x-large;
+    font-size:60px;
     width: auto;
     text-align: center;
   }
