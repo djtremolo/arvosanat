@@ -41,6 +41,8 @@ body {
     background: wheat;
     grid-column: 1 / 4;
     overflow:scroll;
+    width: 50%;
+    
   }
   
   footer {
