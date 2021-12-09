@@ -66,11 +66,11 @@ function updateGradeTable(refTable, factor)
             const myMax = prevPrinted -1;
             if(myMin != myMax)
             {
-                tableContent += "<td>"+myMax+"-"+myMin+"</td><td>"+row["grade"]+"</td>";
+                tableContent += "<td>"+myMax+" - "+myMin+"</td><td>"+row["grade"]+"</td>";
             }
             else
             {
-                tableContent += "<td style=\"white-space:nowrap\">"+myMin+"</td><td>"+row["grade"]+"</td>";
+                tableContent += "<td>"+myMin+"</td><td>"+row["grade"]+"</td>";
             }
             prevPrinted = myMin;
             forcePrint = false;
