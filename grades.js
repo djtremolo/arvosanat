@@ -1,5 +1,7 @@
 var prevMaxPt = 0;
 
+const maxMaxPt = 400;
+
 document.getElementById("curPt")
     .addEventListener("keyup", function(event) 
     {
@@ -88,7 +90,7 @@ function updateGradeTable(refTable, factor)
 
 function getGrade(curPt, maxPt)
 {
-    if((maxPt < 10) || (maxPt > 200))
+    if((maxPt < 10) || (maxPt > maxMaxPt))
     {
         return "error(maxPt)";
     }
@@ -110,7 +112,6 @@ function getGrade(curPt, maxPt)
         console.log("maxPt="+maxPt+", using reference table for "+refValue+"pts");
         prevMaxPt = maxPt;
     }
-
 
     for(const row of refTable["table"])
     {
